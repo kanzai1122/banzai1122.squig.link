@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["∆ JM-1", "Sony XBA-N3"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["∆ JM-1 Target", "Sony XBA-N3"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -52,11 +52,11 @@ const  preference_bounds_name = "Bounds",              // Preference bounds name
        // PHONE_BOOK = "phone_book.json",              // Path to phone book JSON file         /* UNCOMMENT THIS IF YOU WANT TO MOVE PHONEBOOK OUTSIDE AGAIN */
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
        default_DF_name = "∆ JM-1",                   // Default RAW DF name
-       dfBaseline = false,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 1.5,                         // Default Custom DF bass shelf value
-       default_tilt = -0.9,                            // Default Custom DF tilt value
-       default_ear = -1,                                // Default Custom DF ear gain value
-       default_treble = 2,                             // Default Custom DF treble gain value
+       dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
+       default_bass_shelf = 8,                         // Default Custom DF bass shelf value
+       default_tilt = -0.8,                            // Default Custom DF tilt value
+       default_ear = 0,                                // Default Custom DF ear gain value
+       default_treble = 0,                             // Default Custom DF treble gain value
        tiltableTargets = ["∆ JM-1"],                 // Targets that are allowed to be tilted
        compTargets = ["∆ JM-1"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = true;                     // Allow the creator to have a button top right to support them
