@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["∆ JM-1", "Nightjar Singularity"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["∆ JM-1", "Sony XBA-N3"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -18,7 +18,7 @@ const init_phones = ["∆ JM-1", "Nightjar Singularity"],// Optional. Which grap
       watermark_text = "banzai1122",                 // Optional. Watermark appears behind graphs
       watermark_image_url = "assets/images/banzai.svg", // Optional. If image file is in same directory as config, can be just the filename
       rig_description = "clone IEC 711",            // Optional. Labels the graph with a description of the rig used to make the measurement, e.g. "clone IEC 711"
-      page_title = "CrinGraph",                     // Optional. Appended to the page title if share URLs are enabled
+      page_title = "Banzai's Squigs",                     // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
@@ -40,19 +40,19 @@ const init_phones = ["∆ JM-1", "Nightjar Singularity"],// Optional. Which grap
 
 // Specify which targets to display
 const targets = [
-    { type:"Reference",  files:["∆ JM-1","IEF2025 IEC711","Harman IE 2019","IEF Neutral 2023"] },
-    { type:"Neutral",    files:["IEF Neutral 2023","Etymotic"] },
+    { type:"Reference",  files:["∆ JM-1","IEF2025 IEC711","Harman IE 2019","IEF Neutral 2023","IEF Neutral 2020"] },
+    { type:"Neutral",    files:["IEF Neutral 2023","IEF Neutral 2020","Etymotic"] },
 ];
 
 // Haruto's Addons
 const  preference_bounds_name = "Bounds",              // Preference bounds name
        preference_bounds_dir = "assets/pref_bounds/",  // Preference bounds directory
-       preference_bounds_startup = true,              // If true, preference bounds are displayed on startup
+       preference_bounds_startup = false,              // If true, preference bounds are displayed on startup
        allowSquigDownload = true,                     // If true, allows download of measurement data
        // PHONE_BOOK = "phone_book.json",              // Path to phone book JSON file         /* UNCOMMENT THIS IF YOU WANT TO MOVE PHONEBOOK OUTSIDE AGAIN */
-       default_y_scale = "30db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
+       default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
        default_DF_name = "∆ JM-1",                   // Default RAW DF name
-       dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
+       dfBaseline = false,                              // If true, DF is used as baseline when custom df tilt is on
        default_bass_shelf = 1.5,                         // Default Custom DF bass shelf value
        default_tilt = -0.9,                            // Default Custom DF tilt value
        default_ear = -1,                                // Default Custom DF ear gain value
