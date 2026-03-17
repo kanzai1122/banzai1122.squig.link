@@ -40,7 +40,7 @@ const init_phones = ["∆ JM-1 Target", "Sony XBA-N3"],// Optional. Which graphs
 
 // Specify which targets to display
 const targets = [
-    { type:"Reference",  files:["∆ JM-1","IEF2025 IEC711","Harman IE 2019","IEF Neutral 2023","IEF Neutral 2020"] },
+    { type:"Reference",  files:["∆ JM-1","IEF Comp","IEF2025 IEC711","Harman IE 2019","IEF Neutral 2023","IEF Neutral 2020"] },
     { type:"Neutral",    files:["IEF Neutral 2023","IEF Neutral 2020","Etymotic"] },
 ];
 
@@ -58,7 +58,7 @@ const  preference_bounds_name = "Bounds",              // Preference bounds name
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = 0,                             // Default Custom DF treble gain value
        tiltableTargets = ["∆ JM-1"],                 // Targets that are allowed to be tilted
-       compTargets = ["∆ JM-1"],                     // Targets that are allowed to be used for compensation
+       compTargets = ["∆ JM-1","IEF Comp"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = true;                     // Allow the creator to have a button top right to support them
 
 
